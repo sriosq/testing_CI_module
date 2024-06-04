@@ -3,6 +3,7 @@ import nibabel as nib
 import numpy as np
 import os
 
+
 def test_extract_nifti_data(tmpdir): 
     data = np.ones((32, 32, 15, 100), dtype = np.int16)
     img = nib.Nifti1Image(data, np.eye(4))
